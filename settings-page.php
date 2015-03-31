@@ -1,0 +1,93 @@
+<?php
+
+/* Coffee Page Settings */
+
+	function WPTime_coffee_page_settings() {
+		add_menu_page( 'Coffee Page Settings', 'Coffee Page', 'update_core', 'WPTime_coffee_page_settings', 'WPTime_coffee_page_settings_page' );
+	}
+	add_action( 'admin_menu', 'WPTime_coffee_page_settings' );
+
+	function WPTime_coffee_page_register_settings() {
+		register_setting( 'WPTime_coffee_page_setting', 'wptcoffeepage_title' );
+		register_setting( 'WPTime_coffee_page_setting', 'wptcoffeepage_error' );
+		register_setting( 'WPTime_coffee_page_setting', 'wptcoffeepage_desc' );
+		register_setting( 'WPTime_coffee_page_setting', 'wptcoffeepage_backto' );
+		register_setting( 'WPTime_coffee_page_setting', 'wptcoffeepage_placeholder' );
+		register_setting( 'WPTime_coffee_page_setting', 'wptcoffeepage_searchbutton' );
+	}
+	add_action( 'admin_init', 'WPTime_coffee_page_register_settings' );
+		
+	function WPTime_coffee_page_settings_page(){ // settings page function
+	
+		include (plugin_dir_path(__FILE__).'/settings-conditional.php');
+		
+		?>
+			<div class="wrap">
+				<h2>Coffee Page Settings</h2>
+				<?php if( isset($_GET['settings-updated']) && $_GET['settings-updated'] ){ ?>
+					<div id="setting-error-settings_updated" class="updated settings-error"> 
+						<p><strong>Settings saved.</strong></p>
+					</div>
+				<?php } ?>
+                
+            	<form method="post" action="options.php">
+                	<?php settings_fields( 'WPTime_coffee_page_setting' ); ?>
+                	<table class="form-table">
+                		<tbody>
+                    		<tr>
+                        		<th scope="row"><label for="wptcoffeepage_title">Title Text</label></th>
+                            	<td>
+                                    <input class="regular-text" name="wptcoffeepage_title" type="text" id="wptcoffeepage_title" value="<?php echo esc_attr( $title ); ?>">
+								</td>
+                        	</tr>
+                            
+                    		<tr>
+                        		<th scope="row"><label for="wptcoffeepage_error">Error 404 Text</label></th>
+                            	<td>
+                                    <input class="regular-text" name="wptcoffeepage_error" type="text" id="wptcoffeepage_error" value="<?php echo esc_attr( $error ); ?>">
+								</td>
+                        	</tr>
+                            
+                    		<tr>
+                        		<th scope="row"><label for="wptcoffeepage_desc">Description Text</label></th>
+                            	<td>
+                                    <input class="regular-text" name="wptcoffeepage_desc" type="text" id="wptcoffeepage_desc" value="<?php echo esc_attr( $desc ); ?>">
+								</td>
+                        	</tr>
+                            
+                    		<tr>
+                        		<th scope="row"><label for="wptcoffeepage_backto">Back To Text</label></th>
+                            	<td>
+                                    <input class="regular-text" name="wptcoffeepage_backto" type="text" id="wptcoffeepage_backto" value="<?php echo esc_attr( $backto ); ?>">
+								</td>
+                        	</tr>
+                            
+                    		<tr>
+                        		<th scope="row"><label for="wptcoffeepage_placeholder">Placeholder Text</label></th>
+                            	<td>
+                                    <input class="regular-text" name="wptcoffeepage_placeholder" type="text" id="wptcoffeepage_placeholder" value="<?php echo esc_attr( $placeholder ); ?>">
+								</td>
+                        	</tr>
+                            
+
+                    		<tr>
+                        		<th scope="row"><label for="wptcoffeepage_searchbutton">Search Button Text</label></th>
+                            	<td>
+                                    <input class="regular-text" name="wptcoffeepage_searchbutton" type="text" id="wptcoffeepage_searchbutton" value="<?php echo esc_attr( $button ); ?>">
+								</td>
+                        	</tr>
+                    	</tbody>
+                    </table>
+                    <p class="submit"><input id="submit" class="button button-primary" type="submit" name="submit" value="Save Changes"></p>
+                </form>
+            	<div class="tool-box">
+					<h3 class="title">Beautiful WordPress Themes</h3>
+					<p>Get collection of 87 WordPress themes for only $69, a lot of features and free support! <a href="http://j.mp/et_ref_wptimeplugins" title="Get it now!" target="_blank">Get it now</a>.</p>
+					<p>See also <a href="http://j.mp/cm_ref_wptimeplugins" title="CreativeMarket - WordPress themes" target="_blank">CreativeMarket</a> and <a href="http://j.mp/tf_ref_wptimeplugins" title="Themeforest - WordPress themes" target="_blank">Themeforest</a>.</p>
+					<p><a href="http://j.mp/et_ref_wptimeplugins" title="Get collection of 87 WordPress themes for only $69" target="_blank"><img src="<?php echo plugins_url( '/images/banner.jpg', __FILE__ ); ?>"></a></p>
+				</div>
+            </div>
+        <?php
+	} // settings page function
+	
+?>
