@@ -3,7 +3,7 @@ Contributors: Qassim.Dev
 Donate link: http://j.mp/WPTime_donations
 Tags: coffee, coffee page, template, responsive, options, custom, customizer, customize, rtl, page template, error, error 404, error page, 404, 404 error, error 404 page, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 Requires at least: 3.0.0
-Tested up to: 4.1.1
+Tested up to: 4.1.2
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
