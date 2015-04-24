@@ -12,7 +12,7 @@ Responsive and modern error 404 page.
 
 == Description ==
 
-### Coffee Page        
+### Coffee Page         
 
 Responsive and modern error 404 page.
 
