@@ -3,8 +3,8 @@ Contributors: Qassim.Dev
 Donate link: http://j.mp/WPTime_donations
 Tags: coffee, coffee page, template, responsive, options, custom, customizer, customize, rtl, page template, error, error 404, error page, 404, 404 error, error 404 page, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 Requires at least: 3.0.0
-Tested up to: 4.2
-Stable tag: 1.0
+Tested up to: 4.2.1
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,7 @@ Responsive and modern error 404 page.
 
 ### See Also
 
+* [WP Time need your donation.](http://j.mp/Donate_To_WPTime)
 * [Collection of 87 themes for $69 only.](http://j.mp/ET_WPTime)
 * [Get 50% discount for premium WordPress themes or plugins.](http://wp-time.com/get-50-discount-for-any-wordpress-themes-or-plugins/)
 * [Premium WordPress themes on Creative Market.](http://j.mp/CM_WPTime)
@@ -68,6 +69,9 @@ Responsive and modern error 404 page.
 * [Or ask me on twitter.](https://twitter.com/Qassim_Dev)
 
 == Changelog ==
+
+= 1.1 =
+* [WP Time need your donation.](http://j.mp/Donate_To_WPTime)
 
 = 1.0 =
 First version.
