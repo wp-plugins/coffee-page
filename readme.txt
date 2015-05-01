@@ -71,7 +71,7 @@ Responsive and modern error 404 page.
 == Changelog ==
 
 = 1.1 =
-* [WP Time need your donation.](http://j.mp/Donate_To_WPTime)
+* Support WordPress latest version.
 
 = 1.0 =
 First version.
