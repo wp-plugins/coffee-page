@@ -3,7 +3,7 @@
 /* Coffee Page Settings */
 
 	function WPTime_coffee_page_settings() {
-		add_menu_page( 'Coffee Page Settings', 'Coffee Page', 'update_core', 'WPTime_coffee_page_settings', 'WPTime_coffee_page_settings_page' );
+		add_plugins_page( 'Coffee Page Settings', 'Coffee Page', 'update_core', 'WPTime_coffee_page_settings', 'WPTime_coffee_page_settings_page' );
 	}
 	add_action( 'admin_menu', 'WPTime_coffee_page_settings' );
 

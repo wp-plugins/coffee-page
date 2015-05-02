@@ -4,7 +4,7 @@ Donate link: http://j.mp/WPTime_donations
 Tags: coffee, coffee page, template, responsive, options, custom, customizer, customize, rtl, page template, error, error 404, error page, 404, 404 error, error 404 page, image, images, shortcode, Post, plugin, posts, page, widget, admin, sidebar, google, twitter, comments
 Requires at least: 3.0.0
 Tested up to: 4.2.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,7 +58,7 @@ Responsive and modern error 404 page.
 
 1. Upload 'coffee-page' folder to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Now plugin is ready, but if you want to translate texts, go to your wp-admin > Coffee Page.
+3. Now plugin is ready, but if you want to translate texts, go to your wp-admin > Plugins > Coffee Page.
 4. Enjoy.
 
 == Frequently Asked Questions ==
@@ -69,6 +69,10 @@ Responsive and modern error 404 page.
 * [Or ask me on twitter.](https://twitter.com/Qassim_Dev)
 
 == Changelog ==
+
+= 1.2 =
+* add_plugins_page function.
+* Now to find the options page, go to your wp-admin > Plugins > Coffee Page.
 
 = 1.1 =
 * Support WordPress latest version.
