@@ -3,7 +3,7 @@
 Plugin Name: Coffee Page
 Plugin URI: http://wp-time.com/coffee-page/
 Description: Responsive and modern error 404 page.
-Version: 1.2
+Version: 1.21
 Author: Qassim Hassan
 Author URI: http://qass.im
 License: GPLv2 or later
@@ -27,8 +27,9 @@ License: GPLv2 or later
 
 
 // Coffee page settings
-include (plugin_dir_path(__FILE__).'/settings-page.php');
-
+if ( is_admin() ){
+	include (plugin_dir_path(__FILE__).'/settings-page.php');
+}
 
 // Redirect to coffee page
 function WPTime_redirect_to_coffee_page(){
